@@ -6,7 +6,7 @@ class RandomIteratorTest {
 
     @org.junit.jupiter.api.Test
     void hasNext() {
-        RandomIterator<Integer> it = new RandomIterator<>(Arrays.asList(1));
+        RandomIterator<Integer> it = new RandomIterator<>(Collections.singletonList(1));
 
         assertTrue (it.hasNext());
 

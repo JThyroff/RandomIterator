@@ -2,7 +2,8 @@ import java.util.*;
 
 public class RandomIterator<E> implements Iterator<E> {
 
-    List<E> list;
+    private final List<E> list;
+    private final Random r = new Random();
 
     public RandomIterator(List<E> list) {
         this.list = new ArrayList<>(list);
@@ -24,16 +25,9 @@ public class RandomIterator<E> implements Iterator<E> {
      * Returns the next element in the iteration.
      *
      * @return the next element in the iteration
-     * @throws NoSuchElementException if the iteration has no more elements
      */
     @Override
     public E next() {
-        if (!this.hasNext())
-            throw new NoSuchElementException();
-
-        Random r = new Random();
-        int ranInt = r.nextInt(list.size());
-
-        return list.remove(ranInt);
+        return list.remove(r.nextInt(list.size()));
     }
 }

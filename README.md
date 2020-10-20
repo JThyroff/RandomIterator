@@ -1,2 +1,5 @@
 # RandomIterator
-A submodule for random iteration. Special interface for image points.
+A submodule for random iteration.
+
+Credits to Smail Smajlović
+https://github.com/Smail

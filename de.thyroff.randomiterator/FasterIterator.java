@@ -10,9 +10,9 @@ public class FasterIterator<E> implements Iterator<E> {
     private final Object[] unused;
     private int currentIndex = 0;
 
-    public FasterIterator(List<E> pixels) {
-        dimension = pixels.size();
-        unused = pixels.toArray();
+    public FasterIterator(List<E> list) {
+        dimension = list.size();
+        unused = list.toArray();
     }
 
     @Override

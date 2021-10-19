@@ -5,3 +5,6 @@ A submodule for random iteration. Takes a generic list as parameter and returns 
 Credits to Smail Smajlović:
 
 https://github.com/Smail
+
+
+List.shuffle() may be useful as well.

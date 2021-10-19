@@ -7,4 +7,4 @@ Credits to Smail Smajlović:
 https://github.com/Smail
 
 
-List.shuffle() may be useful as well.
+List.clone() & List.shuffle() may also be what you are looking for. :)
